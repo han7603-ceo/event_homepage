@@ -6,7 +6,7 @@
 - 날짜: 하단 `<script>`의 `TRIAL`, `OPEN`
 - 색상: `<style>` 맨 위 `:root` 변수
 - 문구: 각 섹션 주석(`<!-- 1. 히어로 -->` 등) 아래
-- 약도 경로: `<svg>` 안 `d="M738 907 ..."` (map.png 1287×1222 픽셀 기준 좌표)
+- 약도 경로: `<svg>` 안 `d="M738 907 ..."` (map.webp 기준, SVG viewBox 1287×1222 좌표계)
 
 ## 배포
 GitHub 저장소에 올린 뒤 Netlify / Vercel / GitHub Pages에서 저장소 연결 → push할 때마다 자동 배포.

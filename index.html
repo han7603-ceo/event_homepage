@@ -1,381 +1,389 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ko">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>먼저 만나는 국립스포츠박물관 | 개관 기념 이벤트</title>
-<meta name="description" content="국립스포츠박물관 개관(2026.10.15) 기념 이벤트 안내. 시범운영 기간 무료 관람, 선물 증정, 평화의 광장에서 도보 5분 오시는 길.">
-<meta name="theme-color" content="#1f2f8f">
+<title>먼저 만나는 국립스포츠박물관 | 개관 이벤트</title>
+<meta name="description" content="2026.10.10(토) 시범운영, 10.15(목) 개관. 달콤한 팝콘 먹고 박물관도 구경해~호!">
 <meta property="og:title" content="먼저 만나는 국립스포츠박물관">
-<meta property="og:description" content="무료로 즐기고 선물도 받아가세요! 2026.10.15(목) 개관">
-<meta property="og:image" content="assets/building-illust.jpg">
-<meta property="og:type" content="website">
-<link rel="icon" href="assets/character.png" type="image/png">
-<link rel="preload" as="image" href="assets/hero-bg.jpg">
-<link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<meta property="og:description" content="시범운영 2026.10.10(토) · 개관 10.15(목) · 팝콘·돗자리 증정 이벤트">
+<meta property="og:image" content="assets/exterior.webp">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Nanum+Pen+Script&display=swap">
 <style>
+/* ===== 색상 · 폰트 (여기만 바꾸면 전체 반영) ===== */
 :root{
-  --navy:#1f2f8f; --navy-deep:#141f66; --indigo:#2b3aa0;
-  --sky:#8fd0ff; --sky-soft:#dff1ff;
-  --orange:#ff7a1a; --yellow:#ffd23f; --pink:#ff6b9d;
-  --ink:#16213e; --ink-2:#4a5578; --line:#e6e9f4; --paper:#f6f7fc; --white:#fff;
-  --radius:20px; --shadow:0 10px 30px rgba(20,31,102,.12);
-  --font:"Pretendard Variable",Pretendard,-apple-system,BlinkMacSystemFont,system-ui,Roboto,"Helvetica Neue","Segoe UI","Apple SD Gothic Neo","Noto Sans KR","Malgun Gothic",sans-serif;
+  --navy:#1E3A6E; --navy-deep:#14284F; --blue:#0C5A9C;
+  --red:#E22A2D; --orange:#D9732B; --route:#F05A1A;
+  --yellow:#FFD43B; --cream:#FFF9E6; --butter:#FCE7A6; --sky:#CBE7F5;
+  --ink:#1B2E57; --sub:#55617A;
+  --display:'Black Han Sans',sans-serif; --pen:'Nanum Pen Script',cursive;
 }
-*{box-sizing:border-box;margin:0;padding:0}
-html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
-body{font-family:var(--font);color:var(--ink);background:transparent;line-height:1.55;letter-spacing:-.01em;word-break:keep-all}
-img{display:block;max-width:100%;height:auto}
-a{color:inherit;text-decoration:none}
-button{font:inherit;cursor:pointer;border:0;background:none;color:inherit}
-.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;background:#DCEFF8;-webkit-text-size-adjust:100%}
+body{font-family:Pretendard,'Apple SD Gothic Neo',sans-serif;color:var(--ink);word-break:keep-all}
+a{color:var(--blue);text-decoration:none}
+a:hover{color:var(--navy)}
+img{max-width:100%}
+h1,h2,h3{margin:0;font-weight:400}
 
-/* 페이지 프레임: 모바일 우선, 데스크톱에서는 가운데 모바일 폭으로 */
-.frame{max-width:480px;margin:0 auto;background:var(--paper);min-height:100dvh;position:relative;box-shadow:0 0 0 1px rgba(255,255,255,.06),0 30px 80px rgba(0,0,0,.45)}
-html{background:radial-gradient(1200px 600px at 20% -10%,#2b3aa0 0%,transparent 60%),radial-gradient(900px 500px at 110% 110%,#1d5fb8 0%,transparent 55%),#0f1a5c;background-attachment:fixed}
+.page{max-width:480px;margin:0 auto;background:var(--cream);min-height:100vh;position:relative;box-shadow:0 0 40px rgba(27,46,87,.12);overflow:hidden}
+.eyebrow{font-size:13px;font-weight:800;letter-spacing:.14em;color:var(--orange)}
+.display{font-family:var(--display)}
+.btn{display:flex;align-items:center;justify-content:center;min-height:52px;border:0;border-radius:14px;font-family:inherit;font-size:16px;font-weight:800;cursor:pointer;color:#fff}
+.btn-red{background:var(--red)} .btn-navy{background:var(--navy)}
+.btn:hover{color:#fff;filter:brightness(1.06)}
 
 /* 헤더 */
-.hdr{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.92);backdrop-filter:saturate(1.4) blur(10px);-webkit-backdrop-filter:saturate(1.4) blur(10px);border-bottom:1px solid var(--line)}
-.hdr-in{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 16px;padding-top:calc(12px + env(safe-area-inset-top))}
-.hdr-in img{height:22px;width:auto}
-.hdr-link{font-size:13px;font-weight:600;color:var(--navy);padding:8px 12px;border:1px solid #c9d2ff;border-radius:999px;background:#f1f4ff;white-space:nowrap}
+.hdr{position:sticky;top:0;z-index:20;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px 16px;background:rgba(255,255,255,.94);backdrop-filter:blur(8px);border-bottom:1px solid #E3ECF3}
+.hdr-brand{display:flex;align-items:center;gap:8px}
+.hdr-brand img{width:40px;height:40px;object-fit:cover;object-position:center 30%;display:block}
+.hdr-brand b{display:block;font-size:15px;font-weight:800;color:#111;line-height:1.15}
+.hdr-brand small{display:block;font-size:10px;font-weight:600;letter-spacing:.04em;color:#5A6B87}
+.chip{flex:none;padding:6px 12px;border-radius:999px;background:var(--red);color:#fff;font-size:13px;font-weight:800}
 
 /* 히어로 */
-.hero{position:relative;color:#fff;overflow:hidden;background:#1f2f8f url(assets/hero-bg.jpg) 62% top/cover no-repeat;padding:34px 20px 0;text-align:center;isolation:isolate}
-.hero::after{content:"";position:absolute;inset:auto 0 0;height:46%;background:linear-gradient(180deg,rgba(31,47,143,0) 0%,rgba(20,31,102,.85) 70%,#141f66 100%);z-index:-1}
-.dday{display:inline-flex;align-items:center;gap:8px;background:#fff;color:var(--navy);border-radius:14px;padding:6px 14px 6px 10px;font-weight:800;box-shadow:0 6px 18px rgba(0,0,0,.25);position:relative}
-.dday::before{content:"";position:absolute;top:-6px;left:14px;right:14px;height:6px;border-radius:6px 6px 0 0;background:var(--orange)}
-.dday small{font-size:11px;font-weight:700;color:var(--ink-2);letter-spacing:.08em}
-.dday b{font-size:22px;letter-spacing:.02em;color:var(--orange)}
-.hero h1{margin-top:22px;font-weight:900;line-height:1.18;letter-spacing:-.02em;text-shadow:0 4px 18px rgba(0,0,0,.35)}
-.hero h1 .pre{display:block;font-size:clamp(20px,5.6vw,26px);font-weight:700;opacity:.95;margin-bottom:6px}
-.hero h1 .name{display:block;font-size:clamp(32px,9.2vw,44px);background:linear-gradient(180deg,#fff 30%,#ffd23f 100%);-webkit-background-clip:text;background-clip:text;color:transparent;text-shadow:none;filter:drop-shadow(0 4px 14px rgba(0,0,0,.35))}
-.trial{margin:18px auto 0;display:inline-flex;flex-direction:column;gap:2px;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.35);border-radius:14px;padding:10px 18px;font-size:14px;font-weight:600;backdrop-filter:blur(6px)}
-.trial b{font-size:17px;font-weight:800;color:var(--yellow)}
-.cta{display:flex;gap:10px;justify-content:center;margin-top:22px}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:6px;min-height:48px;padding:0 18px;border-radius:14px;font-weight:800;font-size:15px;transition:transform .15s ease,box-shadow .15s ease}
-.btn:active{transform:translateY(1px) scale(.99)}
-.btn-primary{background:var(--orange);color:#fff;box-shadow:0 8px 22px rgba(255,122,26,.45)}
-.btn-ghost{background:rgba(255,255,255,.15);color:#fff;border:1px solid rgba(255,255,255,.5)}
-.btn-navy{background:var(--navy);color:#fff;box-shadow:0 8px 22px rgba(31,47,143,.3)}
-.btn-white{background:#fff;color:var(--navy);border:1px solid #d6dcff}
-.hero-fig{position:relative;margin:18px -20px 0;padding:0 20px}
-.hero-fig img.building{border-radius:22px 22px 0 0;box-shadow:0 -10px 40px rgba(0,0,0,.35);aspect-ratio:16/10;object-fit:cover;width:100%}
-.hero-fig .tiger{position:absolute;right:14px;bottom:-4px;width:34%;max-width:160px;filter:drop-shadow(0 8px 14px rgba(0,0,0,.35));animation:bob 3.2s ease-in-out infinite}
-.hero-fig .bubble{position:absolute;left:28px;bottom:14px;background:#fff;color:var(--ink);font-weight:800;font-size:13px;padding:8px 12px;border-radius:14px 14px 14px 4px;box-shadow:0 8px 20px rgba(0,0,0,.25);transform:rotate(-3deg)}
-.hero-fig .bubble span{color:var(--orange)}
-@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
-.caption{font-size:11.5px;color:var(--ink-2);text-align:center;padding:8px 20px 0}
+.hero{position:relative;padding:28px 20px 0;background:linear-gradient(180deg,#CBE7F5 0%,#EAF5FB 38%,#FCE9B0 78%,#FBE3A0 100%);overflow:hidden}
+.hero-bg{position:absolute;left:-10%;top:300px;width:120%;height:300px;object-fit:cover;object-position:center 70%;filter:blur(5px) saturate(.8);opacity:.35}
+.hero-title{position:relative;text-align:center;display:flex;flex-direction:column;align-items:center;gap:6px}
+.kicker{font-family:var(--display);font-size:26px;color:var(--orange);transform:rotate(-3deg)}
+.hero h1{font-family:var(--display);font-size:clamp(34px,10.5vw,46px);line-height:1.12;color:var(--navy);letter-spacing:.01em}
+.stamp{margin-top:12px;padding:6px 16px;border:3px solid var(--red);outline:1.5px solid var(--red);outline-offset:3px;color:var(--red);font-size:20px;font-weight:800;letter-spacing:.02em;transform:rotate(-1deg);background:rgba(255,255,255,.55)}
+.hero-stage{position:relative;margin-top:26px;height:360px}
+.bubble{position:absolute;right:4px;top:0;z-index:2;background:#fff;border:3px solid #111;border-radius:50%/46%;padding:18px 26px 16px;text-align:center;box-shadow:3px 4px 0 rgba(0,0,0,.08)}
+.bubble-date{font-size:19px;font-weight:700;color:#111;letter-spacing:.02em}
+.bubble-open{font-family:var(--pen);font-size:44px;line-height:1;color:var(--red)}
+.bubble-open span{display:inline-block;border-bottom:3px solid var(--red);padding-bottom:2px}
+.hero-tiger{position:absolute;left:50%;bottom:-6px;width:300px;margin-left:-150px;display:block;animation:bob 2.6s ease-in-out infinite}
+.plaque{position:relative;z-index:3;margin:0 -4px;padding:16px 16px 18px;background:var(--blue);border:4px solid #F4F1E6;outline:2px solid var(--blue);border-radius:18px;display:flex;align-items:center;gap:14px;box-shadow:0 10px 0 -4px rgba(12,90,156,.25)}
+.qr{flex:none;width:58px;height:58px;border-radius:12px;background:#fff;border:3px solid #111;display:flex;align-items:center;justify-content:center;font-family:var(--display);font-size:24px;color:#111}
+.plaque p{margin:0;font-family:var(--display);font-size:21px;line-height:1.3;color:#fff}
+.plaque em{font-style:normal;color:var(--yellow)}
+.countdown{position:relative;margin:22px 0 0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}
+.cd{background:#fff;border-radius:12px;padding:10px 0 8px;text-align:center;border:2px solid var(--navy)}
+.cd b{display:block;font-size:26px;font-weight:800;color:var(--navy);font-variant-numeric:tabular-nums;line-height:1.1}
+.cd small{font-size:12px;font-weight:600;color:#5A6B87}
+.cd-note{position:relative;margin:8px 0 0;text-align:center;font-size:13px;font-weight:600;color:#7A5B1E}
+.hero-cta{position:relative;display:grid;grid-template-columns:1fr 1fr;gap:10px;padding:20px 0 28px}
 
-/* 섹션 공통 */
-.sec{padding:clamp(40px,9vw,56px) 20px}
-.sec.alt{background:#fff}
-.eyebrow{display:inline-block;font-size:12px;font-weight:800;letter-spacing:.14em;color:var(--orange);text-transform:uppercase;margin-bottom:8px}
-.sec h2{font-size:clamp(22px,6.4vw,28px);font-weight:900;line-height:1.25;letter-spacing:-.02em;color:var(--ink)}
-.sec h2 em{font-style:normal;color:var(--navy)}
-.lead{margin-top:10px;color:var(--ink-2);font-size:15px}
+/* 이벤트 */
+.sec{padding:44px 20px 40px}
+.sec-head{display:flex;flex-direction:column;align-items:center;gap:6px;text-align:center}
+.sec-head h2{font-family:var(--display);font-size:30px;line-height:1.25;color:var(--navy)}
+.gifts{margin-top:26px;display:flex;flex-direction:column;gap:18px}
+.gift{position:relative;border-radius:22px;padding:22px 20px 20px;overflow:hidden;border:2px solid var(--navy)}
+.gift-body{position:relative;display:flex;flex-direction:column;gap:10px}
+.gift-tag{align-self:flex-start;padding:4px 10px;border-radius:999px;background:var(--navy);color:var(--yellow);font-size:12px;font-weight:800}
+.gift h3{font-family:var(--display);font-size:26px;color:var(--navy);line-height:1.2}
+.gift p{margin:0;font-size:15px;line-height:1.55;color:#3A3220}
+.gift-deco{position:absolute;pointer-events:none}
+.notice{position:relative;margin-top:16px;display:flex;align-items:center;gap:10px;padding:12px 14px;border-radius:14px;background:#EAF5FB}
+.notice i{flex:none;width:28px;height:28px;border-radius:50%;background:var(--route);color:#fff;font-style:normal;font-size:14px;font-weight:800;display:flex;align-items:center;justify-content:center}
+.notice span{font-size:14px;font-weight:600;line-height:1.45;color:var(--navy)}
+.how{margin:26px 0 0;padding:0;list-style:none;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+.how li{display:flex;flex-direction:column;align-items:center;gap:6px;text-align:center;padding:14px 6px;background:#fff;border-radius:14px;border:1.5px dashed #9FB3CC}
+.how b{font-family:var(--display);font-weight:400;font-size:22px;color:var(--red)}
+.how span{font-size:13px;font-weight:700;line-height:1.4}
 
-/* 3가지 즐길거리 */
-.feat{display:grid;gap:12px;margin-top:22px}
-.feat-card{display:grid;grid-template-columns:84px 1fr;gap:14px;align-items:center;background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:14px;box-shadow:var(--shadow)}
-.feat-card .ic{width:84px;height:84px;border-radius:18px;background:linear-gradient(160deg,#eef2ff,#f8f9ff);display:grid;place-items:center}
-.feat-card .ic img{width:72px;height:72px;object-fit:contain}
-.feat-card h3{font-size:17px;font-weight:800;line-height:1.3}
-.feat-card p{font-size:13.5px;color:var(--ink-2);margin-top:4px}
-.feat-card .tag{display:inline-block;font-size:11px;font-weight:800;color:var(--navy);background:#eef1ff;border-radius:6px;padding:2px 7px;margin-bottom:6px}
-@media (min-width:420px){.feat{grid-template-columns:1fr}}
-
-/* 전시 미리보기 */
-.photo-card{margin-top:20px;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);background:#111}
-.photo-card img{aspect-ratio:4/3;object-fit:cover;width:100%}
-.photo-card figcaption{background:#fff;padding:14px 16px;font-size:14px;color:var(--ink-2)}
-.photo-card figcaption b{display:block;color:var(--ink);font-size:15px;margin-bottom:2px}
-
-/* 선물 이벤트 */
-.gift{background:linear-gradient(180deg,#fff7ec,#fff);border:1px solid #ffe1c2}
-.gift-box{position:relative;margin-top:18px;background:#fff;border-radius:24px;padding:22px 18px 18px;box-shadow:var(--shadow);overflow:hidden;border:2px dashed #ffc996}
-.gift-box .mats{width:78%;margin:0 auto}
-.gift-box .tiger2{position:absolute;right:2px;top:2px;width:30%;max-width:140px;transform:rotate(6deg)}
-.gift-title{text-align:center;margin-top:10px;font-size:clamp(22px,6.6vw,28px);font-weight:900;line-height:1.25}
-.gift-title .u{position:relative;display:inline-block;color:var(--navy)}
-.gift-title .u::after{content:"";position:absolute;left:-2%;right:-2%;bottom:2px;height:40%;background:rgba(255,210,63,.55);z-index:-1;border-radius:6px}
-.gift-title span.red{color:#e5392f}
-.gift-note{margin-top:14px;display:grid;gap:8px}
-.gift-note li{list-style:none;display:flex;gap:8px;font-size:13.5px;color:var(--ink-2)}
-.gift-note li::before{content:"✔";color:var(--orange);font-weight:900;flex:none}
-.free-chip{position:absolute;left:14px;top:14px;background:#e5392f;color:#fff;font-weight:900;font-size:13px;padding:6px 10px;border-radius:999px;box-shadow:0 6px 14px rgba(229,57,47,.35);transform:rotate(-6deg)}
+/* 박물관 */
+.museum{padding:44px 0 40px;background:var(--navy);color:#fff}
+.museum-head{padding:0 20px;display:flex;flex-direction:column;gap:8px}
+.museum-head .eyebrow{color:var(--yellow)}
+.museum-head h2{font-family:var(--display);font-size:28px;line-height:1.3}
+.pen-hl{font-family:var(--pen);font-size:44px;color:#FF6B5E}
+figure{margin:0}
+.ext{margin-top:22px;position:relative}
+.ext img{display:block;width:100%;aspect-ratio:4/5;object-fit:cover;object-position:62% 50%}
+.ext::after{content:"";position:absolute;inset:auto 0 0 0;height:45%;background:linear-gradient(180deg,rgba(30,58,110,0) 0%,var(--navy) 100%)}
+.ext figcaption{position:absolute;left:20px;right:20px;bottom:16px;z-index:1;display:flex;flex-direction:column;gap:4px}
+.ext figcaption small{align-self:flex-start;padding:4px 10px;border-radius:999px;background:var(--yellow);color:var(--navy);font-size:12px;font-weight:800}
+.ext figcaption b{font-size:20px;font-weight:800;line-height:1.35}
+.photo{margin:16px 20px 0;border-radius:20px;overflow:hidden;position:relative}
+.photo img{display:block;width:100%;aspect-ratio:16/10;object-fit:cover}
+.cap-dark{position:absolute;left:12px;bottom:12px;padding:5px 10px;border-radius:8px;background:rgba(17,24,39,.72);font-size:12px;font-weight:600}
+.kids{margin:40px 20px 0;padding:24px 18px 20px;border-radius:24px;background:var(--yellow);color:var(--navy);position:relative;overflow:hidden}
+.kids-tiger{position:absolute;right:10px;top:12px;width:78px}
+.kids .eyebrow{color:#B24A12}
+.kids h3{margin-top:6px;font-family:var(--display);font-size:27px;line-height:1.25;padding-right:84px}
+.kids p{margin:10px 0 0;font-size:15px;line-height:1.55;color:#3A3220;padding-right:40px}
+.kph{border-radius:18px;overflow:hidden;position:relative;border:3px solid var(--navy)}
+.kph img{display:block;width:100%;object-fit:cover}
+.kph figcaption{position:absolute;left:10px;bottom:10px;padding:6px 10px;border-radius:10px;background:#fff;border:2px solid #111;font-size:13px;font-weight:800;color:#111}
+.kids-grid{margin-top:10px;display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.kids-grid .kph{border-radius:16px}
+.kids-grid figcaption{left:8px;bottom:8px;padding:4px 8px;font-size:12px;border-radius:8px}
+.dates{margin:22px 20px 0;display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.date{padding:16px;border-radius:16px}
+.date small{display:block;font-size:13px;font-weight:700}
+.date b{display:block;margin-top:4px;font-size:20px;font-weight:800}
 
 /* 오시는 길 */
-.map-wrap{margin-top:20px;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);background:#fff;border:1px solid var(--line)}
-.map{position:relative}
-.map img{width:100%;height:auto}
-.map svg{position:absolute;inset:0;width:100%;height:100%}
-.route-glow{fill:none;stroke:#fff;stroke-width:26;stroke-linecap:round;stroke-linejoin:round;opacity:.9}
-.route-base{fill:none;stroke:var(--orange);stroke-width:14;stroke-linecap:round;stroke-linejoin:round}
-.route-dash{fill:none;stroke:#fff;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:2 26;animation:march 1.4s linear infinite}
-@keyframes march{to{stroke-dashoffset:-56}}
-.walker{animation:walk 6s linear infinite}
-@keyframes walk{0%{offset-distance:0%}100%{offset-distance:100%}}
-.pin-lbl{font-family:var(--font);font-weight:900;font-size:34px;fill:#fff;paint-order:stroke;stroke:var(--navy);stroke-width:10;stroke-linejoin:round}
-.pin-lbl.start{stroke:#1a9c4b}
-.pulse{transform-origin:center;transform-box:fill-box;animation:pulse 1.8s ease-out infinite}
-@keyframes pulse{0%{transform:scale(.6);opacity:.9}100%{transform:scale(2.2);opacity:0}}
-.walk-badge{position:absolute;left:12px;top:12px;background:var(--navy);color:#fff;font-weight:900;font-size:14px;padding:8px 12px;border-radius:12px;box-shadow:0 8px 20px rgba(20,31,102,.35)}
-.walk-badge b{color:var(--yellow);font-size:18px}
-.legend{display:flex;gap:14px;flex-wrap:wrap;padding:12px 16px 0;font-size:12.5px;color:var(--ink-2)}
-.legend i{display:inline-block;width:14px;height:14px;border-radius:50%;vertical-align:-2px;margin-right:5px}
-.steps{padding:12px 16px 16px;display:grid;gap:10px}
-.step{display:grid;grid-template-columns:30px 1fr;gap:10px;align-items:start;font-size:14px}
-.step .n{width:30px;height:30px;border-radius:50%;background:var(--navy);color:#fff;font-weight:900;display:grid;place-items:center;font-size:13px}
-.step .n.go{background:#1a9c4b}.step .n.end{background:var(--orange)}
-.step b{display:block;font-size:15px}
-.step span{color:var(--ink-2);font-size:13px}
-.addr{margin-top:14px;background:#fff;border:1px solid var(--line);border-radius:16px;padding:14px 16px;display:flex;align-items:center;justify-content:space-between;gap:10px;box-shadow:var(--shadow)}
-.addr .t{font-size:12px;font-weight:800;color:var(--navy);letter-spacing:.06em}
-.addr .a{font-size:15px;font-weight:700;margin-top:2px}
-.copy{flex:none;background:#eef1ff;color:var(--navy);font-weight:800;font-size:13px;padding:10px 12px;border-radius:12px;min-height:40px}
-.copy[data-done="true"]{background:#e4f7ea;color:#1a9c4b}
-.maps{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:12px}
-.maps .btn{min-height:50px;font-size:14px}
-.maps .naver{background:#03c75a;color:#fff}.maps .kakao{background:#fee500;color:#191919}
-.transit{margin-top:14px;font-size:13.5px;color:var(--ink-2);background:#fff;border:1px dashed #c9d2ff;border-radius:14px;padding:12px 14px}
-.transit b{color:var(--ink)}
+.map-head{display:flex;align-items:flex-end;justify-content:space-between;gap:12px}
+.map-head h2{font-family:var(--display);font-size:30px;line-height:1.2;color:var(--navy);margin-top:6px}
+.map{margin-top:18px;position:relative;border-radius:20px;overflow:hidden;border:2px solid var(--navy);background:#fff}
+.map img{display:block;width:100%;height:auto}
+.map svg{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+.route-flow{animation:dash 1s linear infinite}
+.pulse{animation:pulse 1.6s ease-out infinite;transform-box:fill-box;transform-origin:center}
+.pulse.d2{animation-delay:.8s}
+.steps{margin:18px 0 0;padding:0;list-style:none}
+.steps li{display:grid;grid-template-columns:36px 1fr;gap:12px}
+.rail{display:flex;flex-direction:column;align-items:center}
+.rail b{flex:none;width:32px;height:32px;border-radius:50%;background:var(--route);color:#fff;border:3px solid #fff;box-shadow:0 0 0 2px var(--route);font-size:13px;display:flex;align-items:center;justify-content:center}
+.rail i{flex:1;width:3px;min-height:14px;background:#F5B48F}
+.steps li:last-child .rail i{background:transparent}
+.step-txt{padding:4px 0 18px}
+.step-txt b{display:block;font-size:16px;color:var(--navy)}
+.step-txt span{display:block;margin-top:2px;font-size:14px;line-height:1.5;color:var(--sub)}
+.addr{margin-top:6px;padding:16px;border-radius:16px;background:#fff;border:1px solid #E3E0D2;display:flex;flex-direction:column;gap:6px}
+.addr small{font-size:13px;font-weight:700;color:#8A7A50}
+.addr b{font-size:15px;color:var(--navy);line-height:1.5}
+.addr span{font-size:13px;color:var(--sub);line-height:1.5}
+.maplinks{margin-top:10px;display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.maplinks a{min-height:50px;font-size:15px}
 
-/* 개관 안내 / 카운트다운 */
-.open{background:var(--navy);color:#fff;text-align:center;position:relative;overflow:hidden}
-.open::before{content:"";position:absolute;inset:-40% -20% auto;height:70%;background:radial-gradient(closest-side,rgba(143,208,255,.35),transparent 70%);pointer-events:none}
-.open .date{font-size:clamp(34px,10vw,46px);font-weight:900;letter-spacing:.01em;line-height:1.05;margin-top:8px}
-.open .date .open-word{display:block;font-size:.62em;margin-top:4px;letter-spacing:-.01em}
-.open .date em{font-style:normal;color:var(--yellow)}
-.count{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin:22px auto 0;max-width:360px}
-.count div{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.25);border-radius:14px;padding:10px 4px}
-.count b{display:block;font-size:26px;font-weight:900;font-variant-numeric:tabular-nums;line-height:1.1}
-.count span{font-size:11px;opacity:.8;letter-spacing:.1em}
-.open .after{margin-top:16px;font-size:14px;opacity:.9}
-.open .cta{margin-top:20px}
+/* 푸터 · 하단바 · 모달 */
+.ftr{padding:30px 20px 110px;background:var(--navy-deep);color:#BFD3EA;display:flex;flex-direction:column;align-items:center;gap:12px;text-align:center}
+.ftr img{width:84px;height:84px;filter:invert(1);mix-blend-mode:screen}
+.ftr a{color:#fff;font-size:14px;font-weight:700;text-decoration:underline;text-underline-offset:3px}
+.ftr small{font-size:12px;line-height:1.6}
+.tabbar{position:fixed;left:50%;bottom:0;transform:translateX(-50%);width:100%;max-width:480px;z-index:30;padding:10px 14px calc(10px + env(safe-area-inset-bottom));background:rgba(255,249,230,.96);backdrop-filter:blur(8px);border-top:1px solid #EADFB8;display:grid;grid-template-columns:1fr 1.4fr;gap:10px}
+.tabbar .btn{min-height:50px;font-size:15px}
+.btn-outline{background:#fff;border:2px solid var(--navy);color:var(--navy)}
+.btn-outline:hover{color:var(--navy)}
+.modal{position:fixed;inset:0;z-index:50;background:rgba(14,24,48,.7);display:none;align-items:center;justify-content:center;padding:20px}
+.modal.open{display:flex}
+.coupon{width:100%;max-width:360px;background:var(--butter);border-radius:24px;border:3px solid var(--navy);overflow:hidden;text-align:center}
+.coupon-hd{background:var(--blue);color:#fff;padding:14px;font-family:var(--display);font-size:22px}
+.coupon img{display:block;width:190px;margin:18px auto 0}
+.coupon-box{background:#fff;margin:0 18px;border-radius:16px;padding:16px;border:2px dashed var(--navy)}
+.coupon-box b{display:block;font-size:15px;color:var(--navy)}
+.coupon-clock{margin-top:6px;font-size:28px;font-weight:800;color:var(--red);font-variant-numeric:tabular-nums}
+.coupon-box small{display:block;margin-top:4px;font-size:12px;color:var(--sub)}
+.coupon .btn{margin:16px 18px 18px;width:calc(100% - 36px);min-height:50px;font-size:15px}
 
-/* 푸터 */
-.ftr{background:#fff;padding:26px 20px calc(26px + env(safe-area-inset-bottom));font-size:12.5px;color:var(--ink-2);border-top:1px solid var(--line)}
-.ftr img{height:22px;width:auto;margin-bottom:12px}
-.ftr p+p{margin-top:4px}
-.ftr a{color:var(--navy);font-weight:700}
-
-/* 하단 고정 CTA */
-.sticky-cta{position:sticky;bottom:0;z-index:40;padding:10px 16px calc(10px + env(safe-area-inset-bottom));background:linear-gradient(180deg,rgba(246,247,252,0),var(--paper) 40%);display:grid;grid-template-columns:1fr 1fr;gap:10px}
-.sticky-cta .btn{min-height:52px;font-size:15px}
-
-@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+@keyframes dash{to{stroke-dashoffset:-60}}
+@keyframes pulse{0%{transform:scale(.7);opacity:.9}100%{transform:scale(2.2);opacity:0}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important}}
 </style>
 </head>
 <body>
-<div class="frame">
+<div class="page">
 
-<header class="hdr">
-  <div class="hdr-in">
-    <a href="#top" aria-label="국립스포츠박물관 홈"><img src="assets/logo.png" alt="국립스포츠박물관 NATIONAL SPORTS MUSEUM OF KOREA" width="267" height="32"></a>
-    <a class="hdr-link" href="https://sportsmuseum.kspo.or.kr/" target="_blank" rel="noopener">공식 홈페이지 ↗</a>
-  </div>
-</header>
+  <header class="hdr">
+    <a href="#top" class="hdr-brand">
+      <img src="assets/logo.jpg" alt="국립스포츠박물관">
+      <span><b>국립스포츠박물관</b><small>NATIONAL SPORTS MUSEUM OF KOREA</small></span>
+    </a>
+    <span class="chip" id="ddayChip">개관 D-</span>
+  </header>
 
-<main id="top">
-  <!-- 히어로 -->
-  <section class="hero" aria-labelledby="hero-title">
-    <div class="dday" id="dday"><small>개 관</small><b>D-13</b></div>
-    <h1 id="hero-title"><span class="pre">먼저 만나는</span><span class="name">국립스포츠박물관</span></h1>
-    <div class="trial" id="trial">
-      <span>시범운영</span>
-      <b>10월 10일(토) 17:30까지</b>
+  <!-- 1. 히어로 -->
+  <section id="top" class="hero">
+    <img class="hero-bg" src="assets/exterior.webp" alt="">
+    <div class="hero-title">
+      <div class="kicker" id="kicker">시범운영 D-,</div>
+      <h1>먼저 만나는<br>국립스포츠박물관</h1>
+      <div class="stamp">시범운영 : 2026.10.10.(토)</div>
     </div>
-    <div class="cta">
-      <a class="btn btn-primary" href="#way">오시는 길 보기</a>
-      <a class="btn btn-ghost" href="#gift">선물 이벤트</a>
-    </div>
-    <figure class="hero-fig">
-      <img class="building" src="assets/building-illust.jpg" alt="올림픽공원 안에 자리한 국립스포츠박물관 건물 일러스트. 삼각형 모양으로 뻗어 나온 외관 앞 광장에 가족 관람객이 걷고 있다." width="1280" height="720">
-      <div class="bubble">지금 박물관에서 <span>돗자리</span> 받아가세요!</div>
-      <img class="tiger" src="assets/character.png" alt="" aria-hidden="true">
-    </figure>
-  </section>
-  <p class="caption">※ 건물 이미지는 일러스트입니다. 공식 외경 사진으로 교체 예정.</p>
-
-  <!-- 즐길거리 -->
-  <section class="sec" aria-labelledby="feat-title">
-    <span class="eyebrow">What to enjoy</span>
-    <h2 id="feat-title">가족과 함께 <em>세 가지</em> 즐길거리</h2>
-    <p class="lead">시범운영 기간, 개관 전 박물관을 미리 둘러보세요.</p>
-    <div class="feat">
-      <article class="feat-card">
-        <div class="ic"><img src="assets/icon-play.png" alt="" width="72" height="72"></div>
-        <div><span class="tag">체험</span><h3>자녀와 함께하는 체험존</h3><p>아이와 함께 몸으로 즐기는 스포츠 체험 공간</p></div>
-      </article>
-      <article class="feat-card">
-        <div class="ic"><img src="assets/icon-history.png" alt="" width="72" height="72"></div>
-        <div><span class="tag">전시</span><h3>우리나라 스포츠 역사관</h3><p>한국 스포츠의 어제와 오늘을 한눈에</p></div>
-      </article>
-      <article class="feat-card">
-        <div class="ic"><img src="assets/icon-event.png" alt="" width="72" height="72"></div>
-        <div><span class="tag">이벤트</span><h3>다양한 기획전과 현장 이벤트</h3><p>기간 한정 기획전시와 현장 참여 이벤트</p></div>
-      </article>
-    </div>
-  </section>
-
-  <!-- 전시 미리보기 -->
-  <section class="sec alt" aria-labelledby="pre-title">
-    <span class="eyebrow">Sneak peek</span>
-    <h2 id="pre-title">전시실 <em>미리보기</em></h2>
-    <figure class="photo-card">
-      <img src="assets/exhibit-hall.jpg" alt="파란 삼각 구조물 사이로 축구, 복싱, 사이클, 야구 선수 모형이 배치된 전시실 내부" width="1200" height="900" loading="lazy">
-      <figcaption><b>스포츠의 순간을 담은 전시 공간</b>축구·복싱·사이클·야구 등 종목별 장면과 유물을 입체적으로 만나보세요.</figcaption>
-    </figure>
-  </section>
-
-  <!-- 선물 이벤트 -->
-  <section class="sec gift" id="gift" aria-labelledby="gift-title">
-    <span class="eyebrow">Opening gift</span>
-    <h2 id="gift-title">무료로 즐기고 <em>선물</em>도 받아가세요!</h2>
-    <div class="gift-box">
-      <span class="free-chip">관람 무료</span>
-      <img class="tiger2" src="assets/character.png" alt="" aria-hidden="true">
-      <img class="mats" src="assets/gift-mats.png" alt="베이지색과 회색 체크무늬 돗자리 두 개" width="640" height="379" loading="lazy">
-      <p class="gift-title">지금 박물관에서<br><span class="u">돗자리</span> <span class="red">받아가세요!</span></p>
-      <ul class="gift-note">
-        <li>시범운영 기간 방문 관람객 대상 현장 증정</li>
-        <li>수량·증정 방식 등 자세한 내용은 현장 안내를 확인해 주세요</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- 오시는 길 -->
-  <section class="sec" id="way" aria-labelledby="way-title">
-    <span class="eyebrow">Directions</span>
-    <h2 id="way-title">평화의 광장에서<br><em>도보 5분 이내</em></h2>
-    <p class="lead">올림픽공원 안내센터 옆길을 따라 올라오면 바로 박물관입니다.</p>
-
-    <div class="map-wrap">
-      <div class="map">
-        <img src="assets/map.jpg" alt="올림픽공원 약도. 평화의 광장에서 올림픽공원 안내센터를 지나 국립스포츠박물관까지 이어지는 도보 경로" width="929" height="1032" loading="lazy">
-        <svg viewBox="0 0 929 1032" aria-hidden="true" focusable="false">
-          <defs>
-            <path id="route" d="M456 752 L430 686 L518 650 L395 311"/>
-          </defs>
-          <!-- 경로 강조: 흰 테두리 + 주황 본선 + 흐르는 점선 -->
-          <use href="#route" class="route-glow"/>
-          <use href="#route" class="route-base"/>
-          <use href="#route" class="route-dash"/>
-          <!-- 출발: 평화의 광장 -->
-          <circle cx="456" cy="760" r="22" fill="#1a9c4b" class="pulse" opacity=".5"/>
-          <circle cx="456" cy="760" r="18" fill="#1a9c4b" stroke="#fff" stroke-width="6"/>
-          <text x="456" y="826" text-anchor="middle" class="pin-lbl start">출발 · 평화의 광장</text>
-          <!-- 도착: 박물관 -->
-          <circle cx="395" cy="311" r="22" fill="#ff7a1a" class="pulse" opacity=".5"/>
-          <circle cx="395" cy="311" r="18" fill="#ff7a1a" stroke="#fff" stroke-width="6"/>
-          <text x="395" y="276" text-anchor="middle" class="pin-lbl">도착 · 국립스포츠박물관</text>
-          <!-- 이동 아이콘 -->
-          <g class="walker" style="offset-path:path('M456 752 L430 686 L518 650 L395 311');offset-rotate:0deg">
-            <circle r="20" fill="#fff" stroke="#ff7a1a" stroke-width="5"/>
-            <text y="8" text-anchor="middle" font-size="22">🚶</text>
-          </g>
-        </svg>
-        <div class="walk-badge">🚶 도보 <b>5분</b> 이내</div>
+    <div class="hero-stage">
+      <div class="bubble">
+        <div class="bubble-date">26.10.15.(목)</div>
+        <div class="bubble-open"><span>개관!</span></div>
       </div>
-      <div class="legend">
-        <span><i style="background:#1a9c4b"></i>출발 · 평화의 광장</span>
-        <span><i style="background:#ff7a1a"></i>도착 · 국립스포츠박물관</span>
-      </div>
-      <ol class="steps">
-        <li class="step"><span class="n go">1</span><div><b>평화의 광장에서 출발</b><span>세계평화의문을 등지고 분수대 방향으로 이동</span></div></li>
-        <li class="step"><span class="n">2</span><div><b>올림픽공원 안내센터 옆길로 직진</b><span>놀이터를 왼쪽에 두고 북쪽으로 올라갑니다</span></div></li>
-        <li class="step"><span class="n end">3</span><div><b>국립스포츠박물관 도착</b><span>수변무대B 왼편, 큰 건물이 보이면 도착</span></div></li>
-      </ol>
+      <img class="hero-tiger" src="assets/tiger-binocular.png" alt="망원경을 든 호랑이 캐릭터">
     </div>
+    <div class="plaque">
+      <div class="qr">QR</div>
+      <p><em>달콤한 팝콘</em> 먹고<br><em>박물관</em>도 구경해~호 ♥</p>
+    </div>
+    <div class="countdown" id="countdown">
+      <div class="cd"><b data-cd="d">0</b><small>일</small></div>
+      <div class="cd"><b data-cd="h">00</b><small>시간</small></div>
+      <div class="cd"><b data-cd="m">00</b><small>분</small></div>
+      <div class="cd"><b data-cd="s">00</b><small>초</small></div>
+    </div>
+    <p class="cd-note">정식 개관 10월 15일(목)까지</p>
+    <div class="hero-cta">
+      <a href="#event" class="btn btn-red">이벤트 보기</a>
+      <a href="#map" class="btn btn-navy">오시는 길</a>
+    </div>
+  </section>
 
+  <!-- 2. 이벤트 -->
+  <section id="event" class="sec">
+    <div class="sec-head">
+      <span class="eyebrow">EVENT</span>
+      <h2>먼저 온 관람객께<br>드리는 선물 두 가지</h2>
+    </div>
+    <div class="gifts">
+      <article class="gift" style="background:var(--butter)">
+        <img class="gift-deco" src="assets/popcorn.png" alt="" style="right:-18px;bottom:-14px;width:150px">
+        <div class="gift-body" style="padding-right:130px">
+          <span class="gift-tag">GIFT 01</span>
+          <h3>달콤한 팝콘</h3>
+          <p>배너의 QR로 이 페이지에 오셨다면 준비 끝! 현장 부스에서 교환 화면을 보여주세요.</p>
+        </div>
+        <button class="btn btn-red js-coupon" style="position:relative;margin-top:16px;width:100%">팝콘 교환 화면 열기</button>
+      </article>
+      <article class="gift" style="background:#fff">
+        <img class="gift-deco" src="assets/tiger-mat.png" alt="" style="right:-34px;top:-6px;width:170px">
+        <div class="gift-body" style="padding-right:110px">
+          <span class="gift-tag">GIFT 02</span>
+          <h3>박물관 돗자리</h3>
+          <p>박물관에 방문하면 로고 돗자리를 받아갈 수 있어요. 공원 피크닉에 딱!</p>
+        </div>
+        <div class="notice"><i>!</i><span>수령 위치 : 국립스포츠박물관 (평화의광장 옆이에요)</span></div>
+      </article>
+    </div>
+    <ol class="how">
+      <li><b>1</b><span>배너 QR<br>스캔</span></li>
+      <li><b>2</b><span>평화의광장에서<br>박물관으로</span></li>
+      <li><b>3</b><span>팝콘·돗자리<br>받기</span></li>
+    </ol>
+  </section>
+
+  <!-- 3. 박물관 미리보기 -->
+  <section id="museum" class="museum">
+    <div class="museum-head">
+      <span class="eyebrow">PREVIEW</span>
+      <h2>대한민국 스포츠의<br><span class="pen-hl">기록</span>과 <span class="pen-hl">감동</span>을 만나는 곳</h2>
+    </div>
+    <figure class="ext">
+      <img src="assets/exterior.webp" alt="국립스포츠박물관 외관">
+      <figcaption><small>올림픽공원 안</small><b>파란 하늘 아래, 새로 문을 여는<br>국립스포츠박물관</b></figcaption>
+    </figure>
+    <figure class="photo">
+      <img src="assets/interior.jpg" alt="전시실 내부">
+      <figcaption class="cap-dark">선수들의 순간을 담은 전시실</figcaption>
+    </figure>
+    <div class="kids">
+      <img class="kids-tiger" src="assets/tiger-mini.png" alt="">
+      <span class="eyebrow">FOR KIDS</span>
+      <h3>아이와 함께라면<br>더 신나는 박물관</h3>
+      <p>보고 읽는 전시가 아니라 몸으로 뛰고, 기어가고, 굴려보는 스포츠 놀이터예요.</p>
+      <figure class="kph" style="margin-top:18px">
+        <img src="assets/kids-laundry.webp" alt="빨랫줄 사이를 지나가는 아이" style="aspect-ratio:4/3;object-position:60% 50%">
+        <figcaption>빨랫줄 사이를 피해 통과!</figcaption>
+      </figure>
+      <div class="kids-grid">
+        <figure class="kph">
+          <img src="assets/kids-tunnel.webp" alt="노란 터널 안에서 노는 아이들" style="aspect-ratio:1/1;object-position:52% 55%">
+          <figcaption>노란 터널 탐험</figcaption>
+        </figure>
+        <figure class="kph">
+          <img src="assets/kids-olympia.webp" alt="원판을 굴려보는 아이들" style="aspect-ratio:1/1;object-position:68% 50%">
+          <figcaption>어린이박물관</figcaption>
+        </figure>
+      </div>
+    </div>
+    <div class="dates">
+      <div class="date" style="background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.18)"><small style="color:#BFD3EA;font-weight:600">시범운영</small><b>10.10 (토)</b></div>
+      <div class="date" style="background:var(--yellow);color:var(--navy)"><small>정식 개관</small><b>10.15 (목)</b></div>
+    </div>
+  </section>
+
+  <!-- 4. 오시는 길 -->
+  <section id="map" class="sec" style="padding-bottom:36px">
+    <div class="map-head">
+      <div>
+        <span class="eyebrow">DIRECTIONS</span>
+        <h2>평화의광장에서<br>걸어서 5분</h2>
+      </div>
+      <img src="assets/tiger-mini.png" alt="" style="flex:none;width:84px;margin-bottom:-4px">
+    </div>
+    <div class="map">
+      <img src="assets/map.png" alt="평화의광장에서 국립스포츠박물관까지 도보 경로 약도">
+      <!-- 경로 좌표는 map.png(1287×1222) 기준 -->
+      <svg viewBox="0 0 1287 1222" preserveAspectRatio="none" aria-hidden="true">
+        <path id="route" d="M738 907 L700 830 L800 782 L636 322" fill="none" stroke="#fff" stroke-width="34" stroke-linejoin="round" stroke-linecap="round" opacity=".9"/>
+        <path d="M738 907 L700 830 L800 782 L636 322" fill="none" stroke="#F05A1A" stroke-width="22" stroke-linejoin="round" stroke-linecap="round"/>
+        <path class="route-flow" d="M738 907 L700 830 L800 782 L636 322" fill="none" stroke="#FFE14D" stroke-width="8" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="18 42"/>
+        <circle class="pulse" cx="738" cy="907" r="20" fill="none" stroke="#F05A1A" stroke-width="6"/>
+        <circle class="pulse d2" cx="636" cy="322" r="20" fill="none" stroke="#F05A1A" stroke-width="6"/>
+        <circle cx="738" cy="907" r="20" fill="#fff" stroke="#F05A1A" stroke-width="9"/>
+        <circle cx="636" cy="322" r="20" fill="#fff" stroke="#F05A1A" stroke-width="9"/>
+        <circle r="16" fill="#E22A2D" stroke="#fff" stroke-width="6">
+          <animateMotion dur="4s" repeatCount="indefinite" path="M738 907 L700 830 L800 782 L636 322"/>
+        </circle>
+      </svg>
+    </div>
+    <ol class="steps">
+      <li><div class="rail"><b>1</b><i></i></div><div class="step-txt"><b>출발 · 평화의광장</b><span>몽촌토성역 1번 출구에서 올림픽공원으로 들어오면 바로 보여요.</span></div></li>
+      <li><div class="rail"><b>2</b><i></i></div><div class="step-txt"><b>올림픽공원 안내센터 방향으로</b><span>광장 북쪽 계단을 지나 오른쪽으로 꺾어 주세요.</span></div></li>
+      <li><div class="rail"><b>3</b><i></i></div><div class="step-txt"><b>놀이터를 왼쪽에 두고 직진</b><span>수변무대B를 오른쪽에 두고 큰길을 따라 걸어요.</span></div></li>
+      <li><div class="rail"><b>4</b><i></i></div><div class="step-txt"><b>도착 · 국립스포츠박물관</b><span>돗자리·팝콘 부스에서 만나요!</span></div></li>
+    </ol>
     <div class="addr">
-      <div><div class="t">ADDRESS</div><div class="a" id="addr">서울시 송파구 올림픽로 424</div></div>
-      <button class="copy" id="copyBtn" type="button" aria-live="polite">주소 복사</button>
+      <small>주소</small>
+      <b>서울 송파구 올림픽로 424 올림픽공원 내</b>
+      <span>지하철 8호선 몽촌토성역 1번 출구 → 평화의광장</span>
     </div>
-    <div class="maps">
-      <a class="btn naver" href="https://map.naver.com/p/search/%EA%B5%AD%EB%A6%BD%EC%8A%A4%ED%8F%AC%EC%B8%A0%EB%B0%95%EB%AC%BC%EA%B4%80" target="_blank" rel="noopener">네이버지도</a>
-      <a class="btn kakao" href="https://map.kakao.com/?q=%EA%B5%AD%EB%A6%BD%EC%8A%A4%ED%8F%AC%EC%B8%A0%EB%B0%95%EB%AC%BC%EA%B4%80" target="_blank" rel="noopener">카카오맵</a>
-    </div>
-    <p class="transit"><b>대중교통</b> 지하철 8호선 몽촌토성(평화의문)역 → 세계평화의문 → 평화의 광장 → 박물관<br><span style="font-size:12px">※ 주차 공간이 한정되어 있으니 대중교통 이용을 권장합니다.</span></p>
-  </section>
-
-  <!-- 개관 안내 -->
-  <section class="sec open" aria-labelledby="open-title">
-    <span class="eyebrow" style="color:var(--yellow)">Grand opening</span>
-    <h2 id="open-title" class="sr">개관일 안내</h2>
-    <div class="date">26.10.15.<em>(목)</em><span class="open-word">개관!</span></div>
-    <div class="count" id="count" aria-label="개관까지 남은 시간">
-      <div><b id="cd">13</b><span>DAYS</span></div>
-      <div><b id="ch">00</b><span>HOURS</span></div>
-      <div><b id="cm">00</b><span>MIN</span></div>
-      <div><b id="cs">00</b><span>SEC</span></div>
-    </div>
-    <p class="after">개관 전 시범운영 기간에 먼저 만나보세요.</p>
-    <div class="cta">
-      <a class="btn btn-white" href="https://sportsmuseum.kspo.or.kr/" target="_blank" rel="noopener">공식 홈페이지 바로가기 ↗</a>
+    <div class="maplinks">
+      <a class="btn" style="background:#03A94D" href="https://map.naver.com/p/search/%EA%B5%AD%EB%A6%BD%EC%8A%A4%ED%8F%AC%EC%B8%A0%EB%B0%95%EB%AC%BC%EA%B4%80" target="_blank" rel="noopener">네이버 지도</a>
+      <a class="btn" style="background:#FEE500;color:#191600" href="https://map.kakao.com/?q=%EA%B5%AD%EB%A6%BD%EC%8A%A4%ED%8F%AC%EC%B8%A0%EB%B0%95%EB%AC%BC%EA%B4%80" target="_blank" rel="noopener">카카오맵</a>
     </div>
   </section>
-</main>
 
-<footer class="ftr">
-  <img src="assets/logo.png" alt="국립스포츠박물관 NATIONAL SPORTS MUSEUM OF KOREA" width="267" height="32">
-  <p>서울시 송파구 올림픽로 424 (올림픽공원 내)</p>
-  <p><a href="https://sportsmuseum.kspo.or.kr/" target="_blank" rel="noopener">sportsmuseum.kspo.or.kr</a></p>
-  <p style="margin-top:12px">© National Sports Museum of Korea. 본 페이지는 개관 기념 이벤트 안내용 페이지입니다.</p>
-</footer>
+  <footer class="ftr">
+    <img src="assets/logo.jpg" alt="국립스포츠박물관">
+    <a href="https://sportsmuseum.kspo.or.kr/" target="_blank" rel="noopener">공식 홈페이지 바로가기</a>
+    <small>© 국립스포츠박물관 · 서울 송파구 올림픽로 424</small>
+  </footer>
 
-<div class="sticky-cta" id="stickyCta">
-  <a class="btn btn-navy" href="#way">🚶 오시는 길</a>
-  <a class="btn btn-primary" href="#gift">🎁 선물 받기</a>
-</div>
+  <nav class="tabbar">
+    <a href="#map" class="btn btn-outline">길찾기</a>
+    <button class="btn btn-red js-coupon">팝콘 교환 화면</button>
+  </nav>
 
+  <div class="modal" id="coupon" role="dialog" aria-modal="true" aria-label="팝콘 교환권">
+    <div class="coupon">
+      <div class="coupon-hd">팝콘 교환권</div>
+      <img src="assets/tiger-binocular.png" alt="">
+      <div class="coupon-box">
+        <b>직원에게 이 화면을 보여주세요</b>
+        <div class="coupon-clock" id="clock">--.-- --:--:--</div>
+        <small>실시간 시계로 캡처 화면과 구분돼요</small>
+      </div>
+      <button class="btn btn-navy js-close">닫기</button>
+    </div>
+  </div>
 </div>
 
 <script>
-(function(){
-  // ===== 일정 설정 (여기만 고치면 됩니다) =====
-  var OPEN_AT  = new Date('2026-10-15T00:00:00+09:00'); // 정식 개관
-  var TRIAL_END = new Date('2026-10-10T17:30:00+09:00'); // 시범운영 종료
+// ===== 날짜 설정 =====
+const TRIAL = new Date('2026-10-10T00:00:00+09:00').getTime();
+const OPEN  = new Date('2026-10-15T00:00:00+09:00').getTime();
 
-  var pad = function(n){ return String(n).padStart(2,'0'); };
-  var $ = function(id){ return document.getElementById(id); };
+const DAY = 864e5, pad = n => String(n).padStart(2, '0');
+function tick() {
+  const now = Date.now();
+  const dOpen = Math.ceil((OPEN - now) / DAY), dTrial = Math.ceil((TRIAL - now) / DAY);
+  document.getElementById('ddayChip').textContent = dOpen > 0 ? `개관 D-${dOpen}` : '개관!';
+  document.getElementById('kicker').textContent = dTrial > 0 ? `시범운영 D-${dTrial},` : dOpen > 0 ? `개관 D-${dOpen},` : '드디어 개관,';
+  const diff = Math.max(0, OPEN - now);
+  const v = { d: Math.floor(diff / DAY), h: pad(Math.floor(diff / 36e5) % 24), m: pad(Math.floor(diff / 6e4) % 60), s: pad(Math.floor(diff / 1e3) % 60) };
+  document.querySelectorAll('[data-cd]').forEach(el => el.textContent = v[el.dataset.cd]);
+  const t = new Date(now);
+  document.getElementById('clock').textContent = `${pad(t.getMonth() + 1)}.${pad(t.getDate())} ${pad(t.getHours())}:${pad(t.getMinutes())}:${pad(t.getSeconds())}`;
+}
+tick(); setInterval(tick, 1000);
 
-  function tick(){
-    var now = new Date();
-    var diff = OPEN_AT - now;
-    var ddayEl = $('dday').querySelector('b');
-    if (diff <= 0) {
-      ddayEl.textContent = 'OPEN';
-      $('count').innerHTML = '<div style="grid-column:1/-1"><b>개관했습니다!</b><span>GRAND OPEN</span></div>';
-      return;
-    }
-    var d = Math.floor(diff/86400000), h = Math.floor(diff%86400000/3600000), m = Math.floor(diff%3600000/60000), s = Math.floor(diff%60000/1000);
-    // D-day는 한국 시간 날짜 기준
-    var kstNow = new Date(now.getTime() + 9*3600000), kstOpen = new Date(OPEN_AT.getTime() + 9*3600000);
-    var dd = Math.ceil((Date.UTC(kstOpen.getUTCFullYear(),kstOpen.getUTCMonth(),kstOpen.getUTCDate()) - Date.UTC(kstNow.getUTCFullYear(),kstNow.getUTCMonth(),kstNow.getUTCDate()))/86400000);
-    ddayEl.textContent = dd === 0 ? 'D-DAY' : 'D-' + dd;
-    $('cd').textContent = d; $('ch').textContent = pad(h); $('cm').textContent = pad(m); $('cs').textContent = pad(s);
-    if (now > TRIAL_END) { $('trial').innerHTML = '<span>시범운영 종료</span><b>10월 15일(목) 정식 개관</b>'; }
-  }
-  tick(); setInterval(tick, 1000);
+// 부드러운 스크롤 (헤더 높이 보정)
+document.querySelectorAll('a[href^="#"]').forEach(a => a.addEventListener('click', e => {
+  const el = document.querySelector(a.getAttribute('href'));
+  if (!el) return;
+  e.preventDefault();
+  window.scrollTo({ top: el.getBoundingClientRect().top + window.scrollY - 60, behavior: 'smooth' });
+}));
 
-  // 주소 복사
-  var btn = $('copyBtn');
-  btn.addEventListener('click', function(){
-    var text = $('addr').textContent.trim();
-    var done = function(){ btn.textContent = '복사됨 ✓'; btn.dataset.done = 'true'; setTimeout(function(){ btn.textContent = '주소 복사'; btn.dataset.done = 'false'; }, 1800); };
-    if (navigator.clipboard && navigator.clipboard.writeText) { navigator.clipboard.writeText(text).then(done, function(){ fallback(text); done(); }); }
-    else { fallback(text); done(); }
-    function fallback(t){ var ta = document.createElement('textarea'); ta.value = t; ta.style.position='fixed'; ta.style.opacity='0'; document.body.appendChild(ta); ta.select(); try{ document.execCommand('copy'); }catch(e){} document.body.removeChild(ta); }
-  });
-
-  // 하단 고정 CTA: 히어로가 보일 때는 숨김
-  var hero = document.querySelector('.hero'), sticky = $('stickyCta');
-  if ('IntersectionObserver' in window) {
-    new IntersectionObserver(function(es){ sticky.style.transform = es[0].isIntersecting ? 'translateY(120%)' : 'translateY(0)'; sticky.style.transition = 'transform .25s ease'; }, {threshold:.15}).observe(hero);
-  }
-})();
+// 교환권 모달
+const modal = document.getElementById('coupon');
+document.querySelectorAll('.js-coupon').forEach(b => b.addEventListener('click', () => modal.classList.add('open')));
+document.querySelector('.js-close').addEventListener('click', () => modal.classList.remove('open'));
+modal.addEventListener('click', e => { if (e.target === modal) modal.classList.remove('open'); });
 </script>
 </body>
 </html>

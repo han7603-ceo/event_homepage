@@ -1,0 +1,381 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>먼저 만나는 국립스포츠박물관 | 개관 기념 이벤트</title>
+<meta name="description" content="국립스포츠박물관 개관(2026.10.15) 기념 이벤트 안내. 시범운영 기간 무료 관람, 선물 증정, 평화의 광장에서 도보 5분 오시는 길.">
+<meta name="theme-color" content="#1f2f8f">
+<meta property="og:title" content="먼저 만나는 국립스포츠박물관">
+<meta property="og:description" content="무료로 즐기고 선물도 받아가세요! 2026.10.15(목) 개관">
+<meta property="og:image" content="assets/building-illust.jpg">
+<meta property="og:type" content="website">
+<link rel="icon" href="assets/character.png" type="image/png">
+<link rel="preload" as="image" href="assets/hero-bg.jpg">
+<link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<style>
+:root{
+  --navy:#1f2f8f; --navy-deep:#141f66; --indigo:#2b3aa0;
+  --sky:#8fd0ff; --sky-soft:#dff1ff;
+  --orange:#ff7a1a; --yellow:#ffd23f; --pink:#ff6b9d;
+  --ink:#16213e; --ink-2:#4a5578; --line:#e6e9f4; --paper:#f6f7fc; --white:#fff;
+  --radius:20px; --shadow:0 10px 30px rgba(20,31,102,.12);
+  --font:"Pretendard Variable",Pretendard,-apple-system,BlinkMacSystemFont,system-ui,Roboto,"Helvetica Neue","Segoe UI","Apple SD Gothic Neo","Noto Sans KR","Malgun Gothic",sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{font-family:var(--font);color:var(--ink);background:transparent;line-height:1.55;letter-spacing:-.01em;word-break:keep-all}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit;text-decoration:none}
+button{font:inherit;cursor:pointer;border:0;background:none;color:inherit}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+
+/* 페이지 프레임: 모바일 우선, 데스크톱에서는 가운데 모바일 폭으로 */
+.frame{max-width:480px;margin:0 auto;background:var(--paper);min-height:100dvh;position:relative;box-shadow:0 0 0 1px rgba(255,255,255,.06),0 30px 80px rgba(0,0,0,.45)}
+html{background:radial-gradient(1200px 600px at 20% -10%,#2b3aa0 0%,transparent 60%),radial-gradient(900px 500px at 110% 110%,#1d5fb8 0%,transparent 55%),#0f1a5c;background-attachment:fixed}
+
+/* 헤더 */
+.hdr{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.92);backdrop-filter:saturate(1.4) blur(10px);-webkit-backdrop-filter:saturate(1.4) blur(10px);border-bottom:1px solid var(--line)}
+.hdr-in{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 16px;padding-top:calc(12px + env(safe-area-inset-top))}
+.hdr-in img{height:22px;width:auto}
+.hdr-link{font-size:13px;font-weight:600;color:var(--navy);padding:8px 12px;border:1px solid #c9d2ff;border-radius:999px;background:#f1f4ff;white-space:nowrap}
+
+/* 히어로 */
+.hero{position:relative;color:#fff;overflow:hidden;background:#1f2f8f url(assets/hero-bg.jpg) 62% top/cover no-repeat;padding:34px 20px 0;text-align:center;isolation:isolate}
+.hero::after{content:"";position:absolute;inset:auto 0 0;height:46%;background:linear-gradient(180deg,rgba(31,47,143,0) 0%,rgba(20,31,102,.85) 70%,#141f66 100%);z-index:-1}
+.dday{display:inline-flex;align-items:center;gap:8px;background:#fff;color:var(--navy);border-radius:14px;padding:6px 14px 6px 10px;font-weight:800;box-shadow:0 6px 18px rgba(0,0,0,.25);position:relative}
+.dday::before{content:"";position:absolute;top:-6px;left:14px;right:14px;height:6px;border-radius:6px 6px 0 0;background:var(--orange)}
+.dday small{font-size:11px;font-weight:700;color:var(--ink-2);letter-spacing:.08em}
+.dday b{font-size:22px;letter-spacing:.02em;color:var(--orange)}
+.hero h1{margin-top:22px;font-weight:900;line-height:1.18;letter-spacing:-.02em;text-shadow:0 4px 18px rgba(0,0,0,.35)}
+.hero h1 .pre{display:block;font-size:clamp(20px,5.6vw,26px);font-weight:700;opacity:.95;margin-bottom:6px}
+.hero h1 .name{display:block;font-size:clamp(32px,9.2vw,44px);background:linear-gradient(180deg,#fff 30%,#ffd23f 100%);-webkit-background-clip:text;background-clip:text;color:transparent;text-shadow:none;filter:drop-shadow(0 4px 14px rgba(0,0,0,.35))}
+.trial{margin:18px auto 0;display:inline-flex;flex-direction:column;gap:2px;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.35);border-radius:14px;padding:10px 18px;font-size:14px;font-weight:600;backdrop-filter:blur(6px)}
+.trial b{font-size:17px;font-weight:800;color:var(--yellow)}
+.cta{display:flex;gap:10px;justify-content:center;margin-top:22px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:6px;min-height:48px;padding:0 18px;border-radius:14px;font-weight:800;font-size:15px;transition:transform .15s ease,box-shadow .15s ease}
+.btn:active{transform:translateY(1px) scale(.99)}
+.btn-primary{background:var(--orange);color:#fff;box-shadow:0 8px 22px rgba(255,122,26,.45)}
+.btn-ghost{background:rgba(255,255,255,.15);color:#fff;border:1px solid rgba(255,255,255,.5)}
+.btn-navy{background:var(--navy);color:#fff;box-shadow:0 8px 22px rgba(31,47,143,.3)}
+.btn-white{background:#fff;color:var(--navy);border:1px solid #d6dcff}
+.hero-fig{position:relative;margin:18px -20px 0;padding:0 20px}
+.hero-fig img.building{border-radius:22px 22px 0 0;box-shadow:0 -10px 40px rgba(0,0,0,.35);aspect-ratio:16/10;object-fit:cover;width:100%}
+.hero-fig .tiger{position:absolute;right:14px;bottom:-4px;width:34%;max-width:160px;filter:drop-shadow(0 8px 14px rgba(0,0,0,.35));animation:bob 3.2s ease-in-out infinite}
+.hero-fig .bubble{position:absolute;left:28px;bottom:14px;background:#fff;color:var(--ink);font-weight:800;font-size:13px;padding:8px 12px;border-radius:14px 14px 14px 4px;box-shadow:0 8px 20px rgba(0,0,0,.25);transform:rotate(-3deg)}
+.hero-fig .bubble span{color:var(--orange)}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+.caption{font-size:11.5px;color:var(--ink-2);text-align:center;padding:8px 20px 0}
+
+/* 섹션 공통 */
+.sec{padding:clamp(40px,9vw,56px) 20px}
+.sec.alt{background:#fff}
+.eyebrow{display:inline-block;font-size:12px;font-weight:800;letter-spacing:.14em;color:var(--orange);text-transform:uppercase;margin-bottom:8px}
+.sec h2{font-size:clamp(22px,6.4vw,28px);font-weight:900;line-height:1.25;letter-spacing:-.02em;color:var(--ink)}
+.sec h2 em{font-style:normal;color:var(--navy)}
+.lead{margin-top:10px;color:var(--ink-2);font-size:15px}
+
+/* 3가지 즐길거리 */
+.feat{display:grid;gap:12px;margin-top:22px}
+.feat-card{display:grid;grid-template-columns:84px 1fr;gap:14px;align-items:center;background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:14px;box-shadow:var(--shadow)}
+.feat-card .ic{width:84px;height:84px;border-radius:18px;background:linear-gradient(160deg,#eef2ff,#f8f9ff);display:grid;place-items:center}
+.feat-card .ic img{width:72px;height:72px;object-fit:contain}
+.feat-card h3{font-size:17px;font-weight:800;line-height:1.3}
+.feat-card p{font-size:13.5px;color:var(--ink-2);margin-top:4px}
+.feat-card .tag{display:inline-block;font-size:11px;font-weight:800;color:var(--navy);background:#eef1ff;border-radius:6px;padding:2px 7px;margin-bottom:6px}
+@media (min-width:420px){.feat{grid-template-columns:1fr}}
+
+/* 전시 미리보기 */
+.photo-card{margin-top:20px;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);background:#111}
+.photo-card img{aspect-ratio:4/3;object-fit:cover;width:100%}
+.photo-card figcaption{background:#fff;padding:14px 16px;font-size:14px;color:var(--ink-2)}
+.photo-card figcaption b{display:block;color:var(--ink);font-size:15px;margin-bottom:2px}
+
+/* 선물 이벤트 */
+.gift{background:linear-gradient(180deg,#fff7ec,#fff);border:1px solid #ffe1c2}
+.gift-box{position:relative;margin-top:18px;background:#fff;border-radius:24px;padding:22px 18px 18px;box-shadow:var(--shadow);overflow:hidden;border:2px dashed #ffc996}
+.gift-box .mats{width:78%;margin:0 auto}
+.gift-box .tiger2{position:absolute;right:2px;top:2px;width:30%;max-width:140px;transform:rotate(6deg)}
+.gift-title{text-align:center;margin-top:10px;font-size:clamp(22px,6.6vw,28px);font-weight:900;line-height:1.25}
+.gift-title .u{position:relative;display:inline-block;color:var(--navy)}
+.gift-title .u::after{content:"";position:absolute;left:-2%;right:-2%;bottom:2px;height:40%;background:rgba(255,210,63,.55);z-index:-1;border-radius:6px}
+.gift-title span.red{color:#e5392f}
+.gift-note{margin-top:14px;display:grid;gap:8px}
+.gift-note li{list-style:none;display:flex;gap:8px;font-size:13.5px;color:var(--ink-2)}
+.gift-note li::before{content:"✔";color:var(--orange);font-weight:900;flex:none}
+.free-chip{position:absolute;left:14px;top:14px;background:#e5392f;color:#fff;font-weight:900;font-size:13px;padding:6px 10px;border-radius:999px;box-shadow:0 6px 14px rgba(229,57,47,.35);transform:rotate(-6deg)}
+
+/* 오시는 길 */
+.map-wrap{margin-top:20px;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);background:#fff;border:1px solid var(--line)}
+.map{position:relative}
+.map img{width:100%;height:auto}
+.map svg{position:absolute;inset:0;width:100%;height:100%}
+.route-glow{fill:none;stroke:#fff;stroke-width:26;stroke-linecap:round;stroke-linejoin:round;opacity:.9}
+.route-base{fill:none;stroke:var(--orange);stroke-width:14;stroke-linecap:round;stroke-linejoin:round}
+.route-dash{fill:none;stroke:#fff;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:2 26;animation:march 1.4s linear infinite}
+@keyframes march{to{stroke-dashoffset:-56}}
+.walker{animation:walk 6s linear infinite}
+@keyframes walk{0%{offset-distance:0%}100%{offset-distance:100%}}
+.pin-lbl{font-family:var(--font);font-weight:900;font-size:34px;fill:#fff;paint-order:stroke;stroke:var(--navy);stroke-width:10;stroke-linejoin:round}
+.pin-lbl.start{stroke:#1a9c4b}
+.pulse{transform-origin:center;transform-box:fill-box;animation:pulse 1.8s ease-out infinite}
+@keyframes pulse{0%{transform:scale(.6);opacity:.9}100%{transform:scale(2.2);opacity:0}}
+.walk-badge{position:absolute;left:12px;top:12px;background:var(--navy);color:#fff;font-weight:900;font-size:14px;padding:8px 12px;border-radius:12px;box-shadow:0 8px 20px rgba(20,31,102,.35)}
+.walk-badge b{color:var(--yellow);font-size:18px}
+.legend{display:flex;gap:14px;flex-wrap:wrap;padding:12px 16px 0;font-size:12.5px;color:var(--ink-2)}
+.legend i{display:inline-block;width:14px;height:14px;border-radius:50%;vertical-align:-2px;margin-right:5px}
+.steps{padding:12px 16px 16px;display:grid;gap:10px}
+.step{display:grid;grid-template-columns:30px 1fr;gap:10px;align-items:start;font-size:14px}
+.step .n{width:30px;height:30px;border-radius:50%;background:var(--navy);color:#fff;font-weight:900;display:grid;place-items:center;font-size:13px}
+.step .n.go{background:#1a9c4b}.step .n.end{background:var(--orange)}
+.step b{display:block;font-size:15px}
+.step span{color:var(--ink-2);font-size:13px}
+.addr{margin-top:14px;background:#fff;border:1px solid var(--line);border-radius:16px;padding:14px 16px;display:flex;align-items:center;justify-content:space-between;gap:10px;box-shadow:var(--shadow)}
+.addr .t{font-size:12px;font-weight:800;color:var(--navy);letter-spacing:.06em}
+.addr .a{font-size:15px;font-weight:700;margin-top:2px}
+.copy{flex:none;background:#eef1ff;color:var(--navy);font-weight:800;font-size:13px;padding:10px 12px;border-radius:12px;min-height:40px}
+.copy[data-done="true"]{background:#e4f7ea;color:#1a9c4b}
+.maps{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:12px}
+.maps .btn{min-height:50px;font-size:14px}
+.maps .naver{background:#03c75a;color:#fff}.maps .kakao{background:#fee500;color:#191919}
+.transit{margin-top:14px;font-size:13.5px;color:var(--ink-2);background:#fff;border:1px dashed #c9d2ff;border-radius:14px;padding:12px 14px}
+.transit b{color:var(--ink)}
+
+/* 개관 안내 / 카운트다운 */
+.open{background:var(--navy);color:#fff;text-align:center;position:relative;overflow:hidden}
+.open::before{content:"";position:absolute;inset:-40% -20% auto;height:70%;background:radial-gradient(closest-side,rgba(143,208,255,.35),transparent 70%);pointer-events:none}
+.open .date{font-size:clamp(34px,10vw,46px);font-weight:900;letter-spacing:.01em;line-height:1.05;margin-top:8px}
+.open .date .open-word{display:block;font-size:.62em;margin-top:4px;letter-spacing:-.01em}
+.open .date em{font-style:normal;color:var(--yellow)}
+.count{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin:22px auto 0;max-width:360px}
+.count div{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.25);border-radius:14px;padding:10px 4px}
+.count b{display:block;font-size:26px;font-weight:900;font-variant-numeric:tabular-nums;line-height:1.1}
+.count span{font-size:11px;opacity:.8;letter-spacing:.1em}
+.open .after{margin-top:16px;font-size:14px;opacity:.9}
+.open .cta{margin-top:20px}
+
+/* 푸터 */
+.ftr{background:#fff;padding:26px 20px calc(26px + env(safe-area-inset-bottom));font-size:12.5px;color:var(--ink-2);border-top:1px solid var(--line)}
+.ftr img{height:22px;width:auto;margin-bottom:12px}
+.ftr p+p{margin-top:4px}
+.ftr a{color:var(--navy);font-weight:700}
+
+/* 하단 고정 CTA */
+.sticky-cta{position:sticky;bottom:0;z-index:40;padding:10px 16px calc(10px + env(safe-area-inset-bottom));background:linear-gradient(180deg,rgba(246,247,252,0),var(--paper) 40%);display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.sticky-cta .btn{min-height:52px;font-size:15px}
+
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<div class="frame">
+
+<header class="hdr">
+  <div class="hdr-in">
+    <a href="#top" aria-label="국립스포츠박물관 홈"><img src="assets/logo.png" alt="국립스포츠박물관 NATIONAL SPORTS MUSEUM OF KOREA" width="267" height="32"></a>
+    <a class="hdr-link" href="https://sportsmuseum.kspo.or.kr/" target="_blank" rel="noopener">공식 홈페이지 ↗</a>
+  </div>
+</header>
+
+<main id="top">
+  <!-- 히어로 -->
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="dday" id="dday"><small>개 관</small><b>D-13</b></div>
+    <h1 id="hero-title"><span class="pre">먼저 만나는</span><span class="name">국립스포츠박물관</span></h1>
+    <div class="trial" id="trial">
+      <span>시범운영</span>
+      <b>10월 10일(토) 17:30까지</b>
+    </div>
+    <div class="cta">
+      <a class="btn btn-primary" href="#way">오시는 길 보기</a>
+      <a class="btn btn-ghost" href="#gift">선물 이벤트</a>
+    </div>
+    <figure class="hero-fig">
+      <img class="building" src="assets/building-illust.jpg" alt="올림픽공원 안에 자리한 국립스포츠박물관 건물 일러스트. 삼각형 모양으로 뻗어 나온 외관 앞 광장에 가족 관람객이 걷고 있다." width="1280" height="720">
+      <div class="bubble">지금 박물관에서 <span>돗자리</span> 받아가세요!</div>
+      <img class="tiger" src="assets/character.png" alt="" aria-hidden="true">
+    </figure>
+  </section>
+  <p class="caption">※ 건물 이미지는 일러스트입니다. 공식 외경 사진으로 교체 예정.</p>
+
+  <!-- 즐길거리 -->
+  <section class="sec" aria-labelledby="feat-title">
+    <span class="eyebrow">What to enjoy</span>
+    <h2 id="feat-title">가족과 함께 <em>세 가지</em> 즐길거리</h2>
+    <p class="lead">시범운영 기간, 개관 전 박물관을 미리 둘러보세요.</p>
+    <div class="feat">
+      <article class="feat-card">
+        <div class="ic"><img src="assets/icon-play.png" alt="" width="72" height="72"></div>
+        <div><span class="tag">체험</span><h3>자녀와 함께하는 체험존</h3><p>아이와 함께 몸으로 즐기는 스포츠 체험 공간</p></div>
+      </article>
+      <article class="feat-card">
+        <div class="ic"><img src="assets/icon-history.png" alt="" width="72" height="72"></div>
+        <div><span class="tag">전시</span><h3>우리나라 스포츠 역사관</h3><p>한국 스포츠의 어제와 오늘을 한눈에</p></div>
+      </article>
+      <article class="feat-card">
+        <div class="ic"><img src="assets/icon-event.png" alt="" width="72" height="72"></div>
+        <div><span class="tag">이벤트</span><h3>다양한 기획전과 현장 이벤트</h3><p>기간 한정 기획전시와 현장 참여 이벤트</p></div>
+      </article>
+    </div>
+  </section>
+
+  <!-- 전시 미리보기 -->
+  <section class="sec alt" aria-labelledby="pre-title">
+    <span class="eyebrow">Sneak peek</span>
+    <h2 id="pre-title">전시실 <em>미리보기</em></h2>
+    <figure class="photo-card">
+      <img src="assets/exhibit-hall.jpg" alt="파란 삼각 구조물 사이로 축구, 복싱, 사이클, 야구 선수 모형이 배치된 전시실 내부" width="1200" height="900" loading="lazy">
+      <figcaption><b>스포츠의 순간을 담은 전시 공간</b>축구·복싱·사이클·야구 등 종목별 장면과 유물을 입체적으로 만나보세요.</figcaption>
+    </figure>
+  </section>
+
+  <!-- 선물 이벤트 -->
+  <section class="sec gift" id="gift" aria-labelledby="gift-title">
+    <span class="eyebrow">Opening gift</span>
+    <h2 id="gift-title">무료로 즐기고 <em>선물</em>도 받아가세요!</h2>
+    <div class="gift-box">
+      <span class="free-chip">관람 무료</span>
+      <img class="tiger2" src="assets/character.png" alt="" aria-hidden="true">
+      <img class="mats" src="assets/gift-mats.png" alt="베이지색과 회색 체크무늬 돗자리 두 개" width="640" height="379" loading="lazy">
+      <p class="gift-title">지금 박물관에서<br><span class="u">돗자리</span> <span class="red">받아가세요!</span></p>
+      <ul class="gift-note">
+        <li>시범운영 기간 방문 관람객 대상 현장 증정</li>
+        <li>수량·증정 방식 등 자세한 내용은 현장 안내를 확인해 주세요</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 오시는 길 -->
+  <section class="sec" id="way" aria-labelledby="way-title">
+    <span class="eyebrow">Directions</span>
+    <h2 id="way-title">평화의 광장에서<br><em>도보 5분 이내</em></h2>
+    <p class="lead">올림픽공원 안내센터 옆길을 따라 올라오면 바로 박물관입니다.</p>
+
+    <div class="map-wrap">
+      <div class="map">
+        <img src="assets/map.jpg" alt="올림픽공원 약도. 평화의 광장에서 올림픽공원 안내센터를 지나 국립스포츠박물관까지 이어지는 도보 경로" width="929" height="1032" loading="lazy">
+        <svg viewBox="0 0 929 1032" aria-hidden="true" focusable="false">
+          <defs>
+            <path id="route" d="M456 752 L430 686 L518 650 L395 311"/>
+          </defs>
+          <!-- 경로 강조: 흰 테두리 + 주황 본선 + 흐르는 점선 -->
+          <use href="#route" class="route-glow"/>
+          <use href="#route" class="route-base"/>
+          <use href="#route" class="route-dash"/>
+          <!-- 출발: 평화의 광장 -->
+          <circle cx="456" cy="760" r="22" fill="#1a9c4b" class="pulse" opacity=".5"/>
+          <circle cx="456" cy="760" r="18" fill="#1a9c4b" stroke="#fff" stroke-width="6"/>
+          <text x="456" y="826" text-anchor="middle" class="pin-lbl start">출발 · 평화의 광장</text>
+          <!-- 도착: 박물관 -->
+          <circle cx="395" cy="311" r="22" fill="#ff7a1a" class="pulse" opacity=".5"/>
+          <circle cx="395" cy="311" r="18" fill="#ff7a1a" stroke="#fff" stroke-width="6"/>
+          <text x="395" y="276" text-anchor="middle" class="pin-lbl">도착 · 국립스포츠박물관</text>
+          <!-- 이동 아이콘 -->
+          <g class="walker" style="offset-path:path('M456 752 L430 686 L518 650 L395 311');offset-rotate:0deg">
+            <circle r="20" fill="#fff" stroke="#ff7a1a" stroke-width="5"/>
+            <text y="8" text-anchor="middle" font-size="22">🚶</text>
+          </g>
+        </svg>
+        <div class="walk-badge">🚶 도보 <b>5분</b> 이내</div>
+      </div>
+      <div class="legend">
+        <span><i style="background:#1a9c4b"></i>출발 · 평화의 광장</span>
+        <span><i style="background:#ff7a1a"></i>도착 · 국립스포츠박물관</span>
+      </div>
+      <ol class="steps">
+        <li class="step"><span class="n go">1</span><div><b>평화의 광장에서 출발</b><span>세계평화의문을 등지고 분수대 방향으로 이동</span></div></li>
+        <li class="step"><span class="n">2</span><div><b>올림픽공원 안내센터 옆길로 직진</b><span>놀이터를 왼쪽에 두고 북쪽으로 올라갑니다</span></div></li>
+        <li class="step"><span class="n end">3</span><div><b>국립스포츠박물관 도착</b><span>수변무대B 왼편, 큰 건물이 보이면 도착</span></div></li>
+      </ol>
+    </div>
+
+    <div class="addr">
+      <div><div class="t">ADDRESS</div><div class="a" id="addr">서울시 송파구 올림픽로 424</div></div>
+      <button class="copy" id="copyBtn" type="button" aria-live="polite">주소 복사</button>
+    </div>
+    <div class="maps">
+      <a class="btn naver" href="https://map.naver.com/p/search/%EA%B5%AD%EB%A6%BD%EC%8A%A4%ED%8F%AC%EC%B8%A0%EB%B0%95%EB%AC%BC%EA%B4%80" target="_blank" rel="noopener">네이버지도</a>
+      <a class="btn kakao" href="https://map.kakao.com/?q=%EA%B5%AD%EB%A6%BD%EC%8A%A4%ED%8F%AC%EC%B8%A0%EB%B0%95%EB%AC%BC%EA%B4%80" target="_blank" rel="noopener">카카오맵</a>
+    </div>
+    <p class="transit"><b>대중교통</b> 지하철 8호선 몽촌토성(평화의문)역 → 세계평화의문 → 평화의 광장 → 박물관<br><span style="font-size:12px">※ 주차 공간이 한정되어 있으니 대중교통 이용을 권장합니다.</span></p>
+  </section>
+
+  <!-- 개관 안내 -->
+  <section class="sec open" aria-labelledby="open-title">
+    <span class="eyebrow" style="color:var(--yellow)">Grand opening</span>
+    <h2 id="open-title" class="sr">개관일 안내</h2>
+    <div class="date">26.10.15.<em>(목)</em><span class="open-word">개관!</span></div>
+    <div class="count" id="count" aria-label="개관까지 남은 시간">
+      <div><b id="cd">13</b><span>DAYS</span></div>
+      <div><b id="ch">00</b><span>HOURS</span></div>
+      <div><b id="cm">00</b><span>MIN</span></div>
+      <div><b id="cs">00</b><span>SEC</span></div>
+    </div>
+    <p class="after">개관 전 시범운영 기간에 먼저 만나보세요.</p>
+    <div class="cta">
+      <a class="btn btn-white" href="https://sportsmuseum.kspo.or.kr/" target="_blank" rel="noopener">공식 홈페이지 바로가기 ↗</a>
+    </div>
+  </section>
+</main>
+
+<footer class="ftr">
+  <img src="assets/logo.png" alt="국립스포츠박물관 NATIONAL SPORTS MUSEUM OF KOREA" width="267" height="32">
+  <p>서울시 송파구 올림픽로 424 (올림픽공원 내)</p>
+  <p><a href="https://sportsmuseum.kspo.or.kr/" target="_blank" rel="noopener">sportsmuseum.kspo.or.kr</a></p>
+  <p style="margin-top:12px">© National Sports Museum of Korea. 본 페이지는 개관 기념 이벤트 안내용 페이지입니다.</p>
+</footer>
+
+<div class="sticky-cta" id="stickyCta">
+  <a class="btn btn-navy" href="#way">🚶 오시는 길</a>
+  <a class="btn btn-primary" href="#gift">🎁 선물 받기</a>
+</div>
+
+</div>
+
+<script>
+(function(){
+  // ===== 일정 설정 (여기만 고치면 됩니다) =====
+  var OPEN_AT  = new Date('2026-10-15T00:00:00+09:00'); // 정식 개관
+  var TRIAL_END = new Date('2026-10-10T17:30:00+09:00'); // 시범운영 종료
+
+  var pad = function(n){ return String(n).padStart(2,'0'); };
+  var $ = function(id){ return document.getElementById(id); };
+
+  function tick(){
+    var now = new Date();
+    var diff = OPEN_AT - now;
+    var ddayEl = $('dday').querySelector('b');
+    if (diff <= 0) {
+      ddayEl.textContent = 'OPEN';
+      $('count').innerHTML = '<div style="grid-column:1/-1"><b>개관했습니다!</b><span>GRAND OPEN</span></div>';
+      return;
+    }
+    var d = Math.floor(diff/86400000), h = Math.floor(diff%86400000/3600000), m = Math.floor(diff%3600000/60000), s = Math.floor(diff%60000/1000);
+    // D-day는 한국 시간 날짜 기준
+    var kstNow = new Date(now.getTime() + 9*3600000), kstOpen = new Date(OPEN_AT.getTime() + 9*3600000);
+    var dd = Math.ceil((Date.UTC(kstOpen.getUTCFullYear(),kstOpen.getUTCMonth(),kstOpen.getUTCDate()) - Date.UTC(kstNow.getUTCFullYear(),kstNow.getUTCMonth(),kstNow.getUTCDate()))/86400000);
+    ddayEl.textContent = dd === 0 ? 'D-DAY' : 'D-' + dd;
+    $('cd').textContent = d; $('ch').textContent = pad(h); $('cm').textContent = pad(m); $('cs').textContent = pad(s);
+    if (now > TRIAL_END) { $('trial').innerHTML = '<span>시범운영 종료</span><b>10월 15일(목) 정식 개관</b>'; }
+  }
+  tick(); setInterval(tick, 1000);
+
+  // 주소 복사
+  var btn = $('copyBtn');
+  btn.addEventListener('click', function(){
+    var text = $('addr').textContent.trim();
+    var done = function(){ btn.textContent = '복사됨 ✓'; btn.dataset.done = 'true'; setTimeout(function(){ btn.textContent = '주소 복사'; btn.dataset.done = 'false'; }, 1800); };
+    if (navigator.clipboard && navigator.clipboard.writeText) { navigator.clipboard.writeText(text).then(done, function(){ fallback(text); done(); }); }
+    else { fallback(text); done(); }
+    function fallback(t){ var ta = document.createElement('textarea'); ta.value = t; ta.style.position='fixed'; ta.style.opacity='0'; document.body.appendChild(ta); ta.select(); try{ document.execCommand('copy'); }catch(e){} document.body.removeChild(ta); }
+  });
+
+  // 하단 고정 CTA: 히어로가 보일 때는 숨김
+  var hero = document.querySelector('.hero'), sticky = $('stickyCta');
+  if ('IntersectionObserver' in window) {
+    new IntersectionObserver(function(es){ sticky.style.transform = es[0].isIntersecting ? 'translateY(120%)' : 'translateY(0)'; sticky.style.transition = 'transform .25s ease'; }, {threshold:.15}).observe(hero);
+  }
+})();
+</script>
+</body>
+</html>

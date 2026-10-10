@@ -6,9 +6,9 @@
 <title>먼저 만나는 국립스포츠박물관 | 개관 이벤트</title>
 <link rel="icon" type="image/png" sizes="64x64" href="assets/favicon.png">
 <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
-<meta name="description" content="2026.10.10(토) 시범운영, 10.15(목) 개관. 달콤한 팝콘 먹고 박물관도 구경해~호!">
+<meta name="description" content="시범운영 2026.10.10(토)~10.14(수), 10.15(목) 정식 개관. 달콤한 팝콘 먹고 박물관도 구경해~호!">
 <meta property="og:title" content="먼저 만나는 국립스포츠박물관">
-<meta property="og:description" content="시범운영 2026.10.10(토) · 개관 10.15(목) · 팝콘·돗자리 증정 이벤트">
+<meta property="og:description" content="시범운영 10.10(토)~10.14(수) · 개관 10.15(목) · 팝콘·돗자리 증정 이벤트">
 <meta property="og:image" content="assets/exterior.webp">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -205,10 +205,10 @@ figure{margin:0}
     <div class="hero-title">
       <div class="kicker" id="kicker">시범운영 D-,</div>
       <h1>먼저 만나는<br>국립스포츠박물관</h1>
-      <div class="stamp">시범운영 : 2026.10.10.(토)</div>
+      <div class="stamp">시범운영 : 10.10.(토) ~ 10.14.(수)</div>
       <div class="now-open" id="nowOpen">
         <span class="dot" aria-hidden="true"></span>
-        <span class="now-open-txt"><b id="nowOpenTitle">지금 시범운영 중 · 바로 관람 가능!</b><small id="nowOpenSub">개관(10.15) 전 무료로 둘러보고 선물도 받아가세요</small></span>
+        <span class="now-open-txt"><b id="nowOpenTitle">지금 시범운영 중 · 바로 관람 가능!</b><small id="nowOpenSub">10.14(수)까지 무료로 둘러보고 선물도 받아가세요</small></span>
       </div>
     </div>
     <div class="hero-stage">
@@ -308,7 +308,7 @@ figure{margin:0}
       </div>
     </div>
     <div class="dates">
-      <div class="date" style="background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.18)"><small style="color:#BFD3EA;font-weight:600">시범운영</small><b>10.10 (토)</b></div>
+      <div class="date" style="background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.18)"><small style="color:#BFD3EA;font-weight:600">시범운영</small><b>10.10 ~ 10.14</b></div>
       <div class="date" style="background:var(--yellow);color:var(--navy)"><small>정식 개관</small><b>10.15 (목)</b></div>
     </div>
   </section>
@@ -414,7 +414,7 @@ function tick() {
   // 관람 가능 안내 배너 (시범운영 전 / 시범운영 중 / 정식 개관 후)
   const box = document.getElementById('nowOpen'), tt = document.getElementById('nowOpenTitle'), ts = document.getElementById('nowOpenSub');
   if (dTrial > 0) { box.classList.add('is-wait'); tt.textContent = `시범운영 D-${dTrial} · 10월 10일(토)부터 미리 관람할 수 있어요`; ts.textContent = '개관 전 무료로 둘러보고 선물도 받아가세요'; }
-  else if (dOpen > 0) { box.classList.remove('is-wait'); tt.textContent = '지금 시범운영 중 · 바로 관람 가능!'; ts.textContent = '개관(10.15) 전 무료로 둘러보고 선물도 받아가세요'; }
+  else if (dOpen > 0) { box.classList.remove('is-wait'); tt.textContent = '지금 시범운영 중 · 바로 관람 가능!'; ts.textContent = '10.14(수)까지 무료로 둘러보고 선물도 받아가세요'; }
   else { box.classList.remove('is-wait'); tt.textContent = '정식 개관! 지금 관람할 수 있어요'; ts.textContent = '관람 안내는 공식 홈페이지를 확인해 주세요'; }
   const diff = Math.max(0, OPEN - now);
   const v = { d: Math.floor(diff / DAY), h: pad(Math.floor(diff / 36e5) % 24), m: pad(Math.floor(diff / 6e4) % 60), s: pad(Math.floor(diff / 1e3) % 60) };

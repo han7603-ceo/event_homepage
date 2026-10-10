@@ -49,6 +49,8 @@ h1,h2,h3{margin:0;font-weight:400}
 .hero{position:relative;padding:28px 20px 0;background:linear-gradient(180deg,#CBE7F5 0%,#EAF5FB 38%,#FCE9B0 78%,#FBE3A0 100%);overflow:hidden}
 .hero-bg{position:absolute;left:-10%;top:300px;width:120%;height:300px;object-fit:cover;object-position:center 70%;filter:blur(5px) saturate(.8);opacity:.35}
 .hero-title{position:relative;text-align:center;display:flex;flex-direction:column;align-items:center;gap:6px}
+.hero-insta{display:inline-flex;align-items:center;gap:7px;margin-bottom:10px;padding:9px 16px;border-radius:999px;background:linear-gradient(45deg,#F58529 0%,#DD2A7B 50%,#8134AF 100%);color:#fff;font-size:14px;font-weight:800;box-shadow:0 6px 16px rgba(221,42,123,.3);text-decoration:none}
+.hero-insta:hover{color:#fff;filter:brightness(1.06)}
 .kicker{font-family:var(--display);font-size:26px;color:var(--orange);transform:rotate(-3deg)}
 .hero h1{font-family:var(--display);font-size:clamp(34px,10.5vw,46px);line-height:1.12;color:var(--navy);letter-spacing:.01em}
 .stamp{margin-top:12px;padding:6px 16px;border:3px solid var(--red);outline:1.5px solid var(--red);outline-offset:3px;color:var(--red);font-size:20px;font-weight:800;letter-spacing:.02em;transform:rotate(-1deg);background:rgba(255,255,255,.55)}
@@ -190,6 +192,10 @@ figure{margin:0}
   <section id="top" class="hero">
     <img class="hero-bg" src="assets/exterior.webp" alt="">
     <div class="hero-title">
+      <a class="hero-insta" href="https://www.instagram.com/national.sports.museum/" target="_blank" rel="noopener" aria-label="국립스포츠박물관 인스타그램 바로가기">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="2.5" width="19" height="19" rx="5.5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.6" cy="6.4" r="1.1" fill="currentColor" stroke="none"/></svg>
+        <span>인스타그램 바로가기</span>
+      </a>
       <div class="kicker" id="kicker">시범운영 D-,</div>
       <h1>먼저 만나는<br>국립스포츠박물관</h1>
       <div class="stamp">시범운영 : 2026.10.10.(토)</div>

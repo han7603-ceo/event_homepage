@@ -17,6 +17,8 @@ concurrency:
 
 jobs:
   deploy:
+    # 기본 브랜치에서 시작된 실행만 배포 (github-pages 환경이 기본 브랜치만 허용). 그 외 브랜치는 실패 대신 건너뜀
+    if: github.event_name == 'workflow_dispatch' || github.ref_name == github.event.repository.default_branch
     runs-on: ubuntu-latest
     environment:
       name: github-pages

@@ -148,7 +148,11 @@ figure{margin:0}
 /* 푸터 · 하단바 · 모달 */
 .ftr{padding:30px 20px 110px;background:var(--navy-deep);color:#BFD3EA;display:flex;flex-direction:column;align-items:center;gap:12px;text-align:center}
 .ftr img{width:84px;height:84px;filter:invert(1);mix-blend-mode:screen}
-.ftr a{color:#fff;font-size:14px;font-weight:700;text-decoration:underline;text-underline-offset:3px}
+.ftr-links{display:flex;flex-direction:column;gap:10px;width:100%;max-width:320px}
+.ftr-btn{display:flex;align-items:center;justify-content:center;gap:8px;min-height:50px;padding:0 18px;border-radius:14px;font-size:15px;font-weight:800;color:#fff;text-decoration:none}
+.ftr-btn:hover{color:#fff;filter:brightness(1.06)}
+.ftr-insta{background:linear-gradient(45deg,#F58529 0%,#DD2A7B 50%,#8134AF 100%);box-shadow:0 6px 16px rgba(221,42,123,.35)}
+.ftr-site{background:transparent;border:2px solid rgba(255,255,255,.55)}
 .ftr small{font-size:12px;line-height:1.6}
 .tabbar{position:fixed;left:50%;bottom:0;transform:translateX(-50%);width:100%;max-width:480px;z-index:30;padding:10px 14px calc(10px + env(safe-area-inset-bottom));background:rgba(255,249,230,.96);backdrop-filter:blur(8px);border-top:1px solid #EADFB8;display:grid;grid-template-columns:1fr 1.4fr;gap:10px}
 .tabbar .btn{min-height:50px;font-size:15px}
@@ -346,7 +350,13 @@ figure{margin:0}
 
   <footer class="ftr">
     <img src="assets/logo.jpg" alt="국립스포츠박물관">
-    <a href="https://sportsmuseum.kspo.or.kr/" target="_blank" rel="noopener">공식 홈페이지 바로가기</a>
+    <div class="ftr-links">
+      <a class="ftr-btn ftr-insta" href="https://www.instagram.com/national.sports.museum/" target="_blank" rel="noopener" aria-label="국립스포츠박물관 인스타그램 바로가기">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="2.5" width="19" height="19" rx="5.5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.6" cy="6.4" r="1.1" fill="currentColor" stroke="none"/></svg>
+        인스타그램 바로가기
+      </a>
+      <a class="ftr-btn ftr-site" href="https://sportsmuseum.kspo.or.kr/" target="_blank" rel="noopener">공식 홈페이지 바로가기</a>
+    </div>
     <small>© 국립스포츠박물관 · 서울 송파구 올림픽로 424</small>
   </footer>
 
